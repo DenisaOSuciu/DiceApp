@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/app_bg"
+    android:gravity="center">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_gravity="top"
+        android:scaleType="centerInside">
+
+        <ImageView
+            android:id="@+id/top_image"
+            android:layout_width="420dp"
+            android:layout_height="135dp"
+            app:srcCompat="@drawable/top_image" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#009999"
+        android:gravity="center"
+        android:text="@string/button_text"
+        android:textColor="#ffffff"
+        app:backgroundTint="#008080"
+        tools:ignore="TextContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/image_dice1"
+            android:layout_width="wrap_content"
+            android:layout_height="98dp"
+            android:layout_gravity="center"
+            android:contentDescription="TODO"
+            android:src="@drawable/dice1" />
+
+        <ImageView
+            android:id="@+id/image_dice2"
+            android:layout_width="wrap_content"
+            android:layout_height="98dp"
+            android:layout_gravity="center"
+            android:contentDescription="TODO"
+            android:src="@drawable/dice4" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
